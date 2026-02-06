@@ -4,6 +4,17 @@
 
 ---
 
+
+### How to use this effectively (quick reminder)
+
+* Update this **daily** (2–5 minutes)
+* Only move **3 items max** into *Current Focus*
+* Never delete ad-hoc items — promote them instead
+* Treat **Testing Gates** as hard stop conditions
+
+
+---
+
 ## Status Legend
 - [ ] Not started
 - [~] In progress
@@ -27,7 +38,7 @@
 | Backend – Data Acquisition | ⏳ | Foundation for everything |
 | Backend – Strategy Engine | ⏸ | Depends on normalized laps |
 | Backend – API Layer | ⏸ | Depends on strategy engine |
-| Frontend – Core Visualization | ⏳ | Can run on mock data |
+| Frontend – Core Visualization | ⏸ | Can run on mock data |
 | Frontend – Animation & Interaction | ⏸ | After static viz |
 | Testing & Validation | ⏸ | Epic-wise gates |
 
@@ -39,10 +50,10 @@
 Load, cache, and normalize FastF1 session data in a deterministic and reusable way.
 
 ### Tasks
-- [ ] Initialize FastAPI project structure
+- [x] Initialize FastAPI project structure
 - [ ] Add FastF1 dependency and enable cache
-- [~] Implement session loader function
-  - [x] Accept season, round, session type
+- [ ] Implement session loader function
+  - [ ] Accept season, round, session type
   - [ ] Validate season/round/session
   - [ ] Handle missing or unavailable sessions
 - [ ] Extract race metadata (race name, circuit, total laps)
@@ -110,7 +121,7 @@ Expose clean, stable, and typed APIs for frontend consumption.
 Render static race strategies as color-coded stint bars.
 
 ### Tasks
-- [~] Initialize React + TypeScript project
+- [ ] Initialize React + TypeScript project
 - [ ] Define Strategy and Stint TypeScript types
 - [ ] Create mock strategy JSON for development
 - [ ] Implement main strategy chart container
@@ -184,20 +195,6 @@ Validate correctness, performance, and reliability of the system.
 - FastF1 cache enabled by default
 - Frontend to use mock data until backend EPIC 3
 - Strategy computation isolated in backend service layer
+- Frontend to use visx + SVG for charts and Framer motion for Animation
 
 ---
-
-### How to use this effectively (quick reminder)
-
-* Update this **daily** (2–5 minutes)
-* Only move **3 items max** into *Current Focus*
-* Never delete ad-hoc items — promote them instead
-* Treat **Testing Gates** as hard stop conditions
-
-If you want, next I can:
-
-* Convert this into **GitHub Issues automatically**
-* Define a **branching strategy per epic**
-* Help you pick **charting + animation libraries** *before* you regret it 😄
-
-Just say where you want to go next.
