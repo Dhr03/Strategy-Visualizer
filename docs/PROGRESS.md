@@ -51,13 +51,13 @@ Load, cache, and normalize FastF1 session data in a deterministic and reusable w
 
 ### Tasks
 - [x] Initialize FastAPI project structure
-- [ ] Add FastF1 dependency and enable cache
-- [ ] Implement session loader function
-  - [ ] Accept season, round, session type
-  - [ ] Validate season/round/session
-  - [ ] Handle missing or unavailable sessions
-- [ ] Extract race metadata (race name, circuit, total laps)
-- [ ] Implement Redis or in-memory caching layer
+- [x] Add FastF1 dependency and enable cache
+- [~] Implement session loader function
+  - [x] Accept season, round, session type
+  - [~] Validate season/round/session
+  - [?] Handle missing or unavailable sessions
+- [~] Extract race metadata (race name, circuit, total laps)
+- [x] Implement Redis or in-memory caching layer                  <!-- Not required as caching is auto-enabled in fastf1 -->
 - [ ] Centralize FastF1 access (no direct calls elsewhere)
 
 ### Testing Gate
