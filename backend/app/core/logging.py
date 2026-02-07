@@ -30,3 +30,5 @@ def setup_logging() -> None:
     dictConfig(LOGGING_CONFIG)
     logging.getLogger(__name__).info("Logging configured")
 
+def get_logger(source) -> logging.Logger:
+    return logging.getLogger(source)
